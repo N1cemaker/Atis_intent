@@ -1,0 +1,40 @@
+[Device] Using cpu
+[Load] data/processed/train.txt: 4481 examples
+[Load] data/processed/train.txt: 4481 examples
+[Load] data/processed/test.txt: 893 examples
+[Load] data/processed/test.txt: 893 examples
+[Labels] Num intents = 22
+[Labels] Num intents (train) = 22
+[WARN] Skipped 5 test examples with intents unseen in training (e.g., {'flight_no+airline', 'day_name', 'airfare+flight', 'flight+airline'}).
+[Test] Using 888 examples after filtering.
+=== Classification Report (BERT) ===
+                            precision    recall  f1-score   support
+
+              abbreviation       0.94      0.88      0.91        33
+                  aircraft       0.73      0.89      0.80         9
+ aircraft+flight+flight_no       0.00      0.00      0.00         0
+                   airfare       0.92      0.94      0.93        48
+       airfare+flight_time       0.00      0.00      0.00         0
+                   airline       1.00      0.97      0.99        38
+         airline+flight_no       0.00      0.00      0.00         0
+                   airport       0.94      0.83      0.88        18
+                  capacity       1.00      0.81      0.89        21
+                  cheapest       0.00      0.00      0.00         0
+                      city       1.00      0.67      0.80         6
+                  distance       1.00      0.80      0.89        10
+                    flight       0.98      0.99      0.98       632
+            flight+airfare       0.80      0.33      0.47        12
+                 flight_no       1.00      1.00      1.00         8
+               flight_time       1.00      1.00      1.00         1
+               ground_fare       1.00      0.86      0.92         7
+            ground_service       1.00      1.00      1.00        36
+ground_service+ground_fare       0.00      0.00      0.00         0
+                      meal       0.83      0.83      0.83         6
+                  quantity       0.27      1.00      0.43         3
+               restriction       0.00      0.00      0.00         0
+
+                  accuracy                           0.96       888
+                 macro avg       0.65      0.63      0.62       888
+              weighted avg       0.97      0.96      0.96       888
+
+[Figure] BERT confusion matrices saved to reports/figures/bert_confusion_matrix_counts.png and reports/figures/bert_confusion_matrix_norm.png
