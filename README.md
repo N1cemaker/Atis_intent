@@ -130,9 +130,9 @@ All models use:
 
 | Model     | Test Acc. |
 |-----------|-----------|
-| TextCNN   | 0.932     |
-| BiLSTM    | 0.956     |
-| BERT      | **0.979** |
+| TextCNN   | 0.9392     |
+| BiLSTM    | 0.9437     |
+| BERT      | **0.9600** |
 
 BERT significantly outperforms CNN/RNN despite being the smallest `bert-tiny` variant.
 
@@ -153,6 +153,16 @@ It documents:
 - Intended usage  
 - Failure cases  
 - Bias / fairness considerations  
+
+---
+
+## 🖥️ Reproducibility Notes
+
+We include both CPU and GPU training logs in the `results/` directory.
+GPU runs were used for the primary model selection, while CPU runs were used
+to validate reproducibility and ensure consistent evaluation across hardware.
+
+All reported results correspond to the unified evaluation pipeline.
 
 ---
 
