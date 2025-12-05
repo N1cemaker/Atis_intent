@@ -1,0 +1,187 @@
+=== Classification Report (TextCNN on ATIS test set) ===
+                            precision    recall  f1-score   support
+
+              abbreviation     0.9697    0.9697    0.9697        33
+                  aircraft     0.5833    0.7778    0.6667         9
+ aircraft+flight+flight_no     0.0000    0.0000    0.0000         0
+                   airfare     0.9400    0.9792    0.9592        48
+       airfare+flight_time     0.0000    0.0000    0.0000         0
+                   airline     0.9250    0.9737    0.9487        38
+         airline+flight_no     0.0000    0.0000    0.0000         0
+                   airport     1.0000    0.8333    0.9091        18
+                  capacity     1.0000    0.7619    0.8649        21
+                  cheapest     0.0000    0.0000    0.0000         0
+                      city     1.0000    0.1667    0.2857         6
+                  distance     1.0000    0.5000    0.6667        10
+                    flight     0.9470    0.9905    0.9683       632
+            flight+airfare     0.6667    0.1667    0.2667        12
+                 flight_no     0.0000    0.0000    0.0000         8
+               flight_time     0.5000    1.0000    0.6667         1
+               ground_fare     1.0000    0.5714    0.7273         7
+            ground_service     0.9730    1.0000    0.9863        36
+ground_service+ground_fare     0.0000    0.0000    0.0000         0
+                      meal     0.0000    0.0000    0.0000         6
+                  quantity     0.3333    1.0000    0.5000         3
+               restriction     0.0000    0.0000    0.0000         0
+
+                  accuracy                         0.9369       888
+                 macro avg     0.5381    0.4859    0.4721       888
+              weighted avg     0.9263    0.9369    0.9245       888
+
+
+=== Classification Report (TextCNN_weight on ATIS test set) ===
+                            precision    recall  f1-score   support
+
+              abbreviation     0.9706    1.0000    0.9851        33
+                  aircraft     0.6000    1.0000    0.7500         9
+ aircraft+flight+flight_no     0.0000    0.0000    0.0000         0
+                   airfare     0.6957    1.0000    0.8205        48
+       airfare+flight_time     0.0000    0.0000    0.0000         0
+                   airline     0.9744    1.0000    0.9870        38
+         airline+flight_no     0.0000    0.0000    0.0000         0
+                   airport     0.9412    0.8889    0.9143        18
+                  capacity     1.0000    0.9048    0.9500        21
+                  cheapest     0.0000    0.0000    0.0000         0
+                      city     0.5000    0.1667    0.2500         6
+                  distance     1.0000    0.5000    0.6667        10
+                    flight     0.9823    0.9668    0.9745       632
+            flight+airfare     1.0000    0.1667    0.2857        12
+                 flight_no     0.7000    0.8750    0.7778         8
+               flight_time     0.5000    1.0000    0.6667         1
+               ground_fare     1.0000    0.7143    0.8333         7
+            ground_service     0.9000    1.0000    0.9474        36
+ground_service+ground_fare     0.0000    0.0000    0.0000         0
+                      meal     0.0000    0.0000    0.0000         6
+                  quantity     0.4286    1.0000    0.6000         3
+               restriction     0.0000    0.0000    0.0000         0
+
+                  accuracy                         0.9392       888
+                 macro avg     0.5542    0.5538    0.5186       888
+              weighted avg     0.9441    0.9392    0.9332       888
+
+
+=== Classification Report (BiLSTM on ATIS test set) ===
+                            precision    recall  f1-score   support
+
+              abbreviation     0.9706    1.0000    0.9851        33
+                  aircraft     1.0000    1.0000    1.0000         9
+ aircraft+flight+flight_no     0.0000    0.0000    0.0000         0
+                   airfare     0.9216    0.9792    0.9495        48
+       airfare+flight_time     0.0000    0.0000    0.0000         0
+                   airline     0.9250    0.9737    0.9487        38
+         airline+flight_no     0.0000    0.0000    0.0000         0
+                   airport     0.8824    0.8333    0.8571        18
+                  capacity     1.0000    0.9048    0.9500        21
+                  cheapest     0.0000    0.0000    0.0000         0
+                      city     0.3333    0.1667    0.2222         6
+                  distance     1.0000    0.6000    0.7500        10
+                    flight     0.9554    0.9826    0.9688       632
+            flight+airfare     0.8333    0.4167    0.5556        12
+                 flight_no     0.0000    0.0000    0.0000         8
+               flight_time     0.5000    1.0000    0.6667         1
+               ground_fare     1.0000    0.7143    0.8333         7
+            ground_service     0.9474    1.0000    0.9730        36
+ground_service+ground_fare     0.0000    0.0000    0.0000         0
+                      meal     0.0000    0.0000    0.0000         6
+                  quantity     0.3750    1.0000    0.5455         3
+               restriction     0.0000    0.0000    0.0000         0
+
+                  accuracy                         0.9437       888
+                 macro avg     0.5293    0.5260    0.5093       888
+              weighted avg     0.9300    0.9437    0.9341       888
+
+
+ification Report (TextCNN-random on ATIS test set) ===
+                            precision    recall  f1-score   support
+
+              abbreviation     1.0000    1.0000    1.0000        33
+                  aircraft     0.6667    0.8889    0.7619         9
+ aircraft+flight+flight_no     0.0000    0.0000    0.0000         0
+                   airfare     0.9592    0.9792    0.9691        48
+       airfare+flight_time     0.0000    0.0000    0.0000         0
+                   airline     0.9474    0.9474    0.9474        38
+         airline+flight_no     0.0000    0.0000    0.0000         0
+                   airport     1.0000    0.7222    0.8387        18
+                  capacity     1.0000    0.8571    0.9231        21
+                  cheapest     0.0000    0.0000    0.0000         0
+                      city     0.0000    0.0000    0.0000         6
+                  distance     1.0000    0.4000    0.5714        10
+                    flight     0.9414    0.9905    0.9653       632
+            flight+airfare     0.6667    0.1667    0.2667        12
+                 flight_no     0.0000    0.0000    0.0000         8
+               flight_time     1.0000    1.0000    1.0000         1
+               ground_fare     1.0000    0.7143    0.8333         7
+            ground_service     0.9474    1.0000    0.9730        36
+ground_service+ground_fare     0.0000    0.0000    0.0000         0
+                      meal     0.0000    0.0000    0.0000         6
+                  quantity     0.3750    1.0000    0.5455         3
+               restriction     0.0000    0.0000    0.0000         0
+
+                  accuracy                         0.9369       888
+                 macro avg     0.5229    0.4848    0.4816       888
+              weighted avg     0.9192    0.9369    0.9227       888
+
+
+
+
+=== Classification Report (TextCNN-glove_frozen on ATIS test set) ===
+                            precision    recall  f1-score   support
+
+              abbreviation     1.0000    1.0000    1.0000        33
+                  aircraft     0.8182    1.0000    0.9000         9
+ aircraft+flight+flight_no     0.0000    0.0000    0.0000         0
+                   airfare     0.9216    0.9792    0.9495        48
+       airfare+flight_time     0.0000    0.0000    0.0000         0
+                   airline     1.0000    1.0000    1.0000        38
+         airline+flight_no     0.0000    0.0000    0.0000         0
+                   airport     1.0000    0.8889    0.9412        18
+                  capacity     1.0000    0.9524    0.9756        21
+                  cheapest     0.0000    0.0000    0.0000         0
+                      city     1.0000    0.1667    0.2857         6
+                  distance     1.0000    0.7000    0.8235        10
+                    flight     0.9601    0.9889    0.9743       632
+            flight+airfare     0.5000    0.0833    0.1429        12
+                 flight_no     1.0000    0.5000    0.6667         8
+               flight_time     0.5000    1.0000    0.6667         1
+               ground_fare     1.0000    0.7143    0.8333         7
+            ground_service     0.9231    1.0000    0.9600        36
+ground_service+ground_fare     0.0000    0.0000    0.0000         0
+                      meal     0.0000    0.0000    0.0000         6
+                  quantity     0.3750    1.0000    0.5455         3
+               restriction     0.0000    0.0000    0.0000         0
+
+                  accuracy                         0.9527       888
+                 macro avg     0.5908    0.5443    0.5302       888
+              weighted avg     0.9462    0.9527    0.9432       888
+
+
+
+=== Classification Report (TextCNN-glove_finetune on ATIS test set) ===
+                            precision    recall  f1-score   support
+
+              abbreviation     1.0000    1.0000    1.0000        33
+                  aircraft     1.0000    1.0000    1.0000         9
+ aircraft+flight+flight_no     0.0000    0.0000    0.0000         0
+                   airfare     0.9592    0.9792    0.9691        48
+       airfare+flight_time     0.0000    0.0000    0.0000         0
+                   airline     1.0000    1.0000    1.0000        38
+         airline+flight_no     0.0000    0.0000    0.0000         0
+                   airport     1.0000    0.8333    0.9091        18
+                  capacity     1.0000    0.9524    0.9756        21
+                  cheapest     0.0000    0.0000    0.0000         0
+                      city     1.0000    0.1667    0.2857         6
+                  distance     1.0000    0.8000    0.8889        10
+                    flight     0.9458    0.9937    0.9691       632
+            flight+airfare     1.0000    0.0833    0.1538        12
+                 flight_no     0.0000    0.0000    0.0000         8
+               flight_time     1.0000    1.0000    1.0000         1
+               ground_fare     1.0000    0.7143    0.8333         7
+            ground_service     0.9730    1.0000    0.9863        36
+ground_service+ground_fare     0.0000    0.0000    0.0000         0
+                      meal     0.0000    0.0000    0.0000         6
+                  quantity     0.4286    1.0000    0.6000         3
+               restriction     0.0000    0.0000    0.0000         0
+
+                  accuracy                         0.9516       888
+                 macro avg     0.6048    0.5238    0.5260       888
+              weighted avg     0.9404    0.9516    0.9374       888
